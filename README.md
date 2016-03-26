@@ -1,0 +1,2 @@
+# matala1
+reads an external txt file and turns the file into a graph representing the points and edges that were written in the file.there is also a function that checks the shortest path between two points using dijkstras algorithm and prints the path itself.there also is a function that reads another external file with the amount of tests that the user wants to run including a black list of points which the user does not want the algorithm to pass through. 

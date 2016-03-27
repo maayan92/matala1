@@ -1,7 +1,8 @@
-package matala1mivnei;
+package ex;
 
 import java.io.File;
 import java.util.Scanner;
+
 
 public class DikjstraAlgorithm {
 	public static void main(String[] args) {
@@ -10,11 +11,11 @@ public class DikjstraAlgorithm {
 		//largeEWD
 		long startTime = System.currentTimeMillis();
 		// ... do something ...
-			//h.readgraph("C:\\Users\\igal\\Desktop\\tineEWD.txt");
-		h.readTest("tinyEWD.txt","test1.txt");
+			//h.readgraph("C:\\Users\\igal\\Desktop\\largeEWD.txt");
+		h.readTest("largeEWD.txt","test1.txt");
 	//	h.readgraph("mediumEWD.txt");
 		//h.readTest2("test1.txt");
-	h.findShortestPaths(0, 7);
+	//h.findShortestPaths(0, 7);
 		long estimatedTime = System.currentTimeMillis() - startTime;
 		System.out.println(estimatedTime);
 	}
@@ -254,7 +255,7 @@ public class DikjstraAlgorithm {
 					}
 					if (vertices[temp.index].cost > u.cost + temp.weight) {
 						vertices[temp.index].cost = (u.cost + temp.weight);
-						vertices[temp.index].put = (u.put +"->"+ vertices[temp.index].put);
+						//vertices[temp.index].put = (u.put +"->"+ vertices[temp.index].put);
 						heap.heapifyUP(vertices[temp.index]);
 					}
 					temp = temp.next;
